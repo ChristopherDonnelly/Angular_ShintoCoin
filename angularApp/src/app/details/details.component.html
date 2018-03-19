@@ -1,0 +1,5 @@
+<p>Detailed view of a transaction from the ledger.</p>
+<p>Transaction #{{transactionId+1}}</p>
+<p *ngIf="action=='Mined'"><strong>{{action}}</strong> {{amount}} ShintoCoin</p>
+<p *ngIf="action=='Bought'"><strong>{{action}}</strong> {{amount}} ShintoCoin(s) at ${{value}}</p>
+<p *ngIf="action=='Sold'"><strong>{{action}}</strong> {{amount}} ShintoCoin(s) at ${{value}}</p>

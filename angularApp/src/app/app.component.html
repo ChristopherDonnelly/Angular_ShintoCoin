@@ -1,0 +1,16 @@
+<div id="wrapper">
+    <h1>ShintoCoin</h1>
+    
+    <a href="#" [routerLink]="['home']">Home</a> | 
+    <a href="#" [routerLink]="['mine']">Mine Coins</a> | 
+    <a href="#" [routerLink]="['buy']">Buy Coins</a> | 
+    <a href="#" [routerLink]="['sell']">Sell Coins</a> | 
+    <a href="#" [routerLink]="['ledger']">Browse Ledger</a> | 
+    <a href="#" [routerLink]="['details']">Details</a>
+
+    <fieldset>
+        <legend>&nbsp;{{this.shintoCoinService.location}}&nbsp;</legend>
+        <router-outlet></router-outlet>
+    </fieldset>
+
+</div>

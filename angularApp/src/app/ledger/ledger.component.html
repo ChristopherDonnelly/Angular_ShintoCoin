@@ -1,0 +1,24 @@
+<p>Here you can browse all ShintoCoin transactions.</p>
+<div id="table_layer">
+  <table>
+    <tr>
+      <th colspan="4">ShintoCoin Ledger</th>
+    </tr>
+    <tr>
+      <td><strong>Action</strong></td>
+      <td><strong>Amount</strong></td>
+      <td><strong>Value</strong></td>
+      <td><strong>&nbsp;</strong></td>
+    </tr>
+  </table>
+  <div id="ledger_layer">
+    <table>
+      <tr *ngFor="let account of shintoCoinService.account.transactions; let i=index">
+        <td>{{account.action}}</td>
+        <td>{{account.amount}}</td>
+        <td>{{account.value}}</td>
+        <td><button (click)="showDetails(i)">Details</button></td>
+      </tr>
+    </table>
+  </div>
+</div>
